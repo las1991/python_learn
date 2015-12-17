@@ -21,15 +21,18 @@ if __name__ == '__main__':
 
     dic ={'tom':(12,86),'Lee':(15, 99),'Lucy':(11, 58),'Joseph':(19, 56)}
     f=open("test.txt","w")
+    content=""
     for d in dic:
         str=''
         for i in dic[d]:
             str=str+','+i.__str__()
-        f.write(d+str+"\r")
+        content+=d+str+"\n"
+        f.write(d+str+"\n")
+    #f.writelines(content)
 
     f.close()
 
-    #file=open("test.txt","r")
+    file=open("test.txt","r")
 
-    for line in open("test.txt","r"):
+    for line in file:
         print line
