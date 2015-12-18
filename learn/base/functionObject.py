@@ -6,7 +6,7 @@ def test(f, a, b):
     print 'test'
     print f(a, b)
 
-def func(a):
+def filter_func(a):
     if a > 100:
         return True
     else:
@@ -24,4 +24,6 @@ if __name__ == '__main__':
     print re
 
 
-    filter(func,[10,56,101,500])
+    print  filter(filter_func,[10,56,101,500])
+
+    print reduce((lambda x,y: x+y),[1,2,5,7,9])  #(((1+2)+5)+7)+9
