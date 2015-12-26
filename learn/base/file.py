@@ -10,7 +10,7 @@ f.close()
 
 '''
 if __name__ == '__main__':
-    f = open('C:\\Users\\andy\Desktop\\jd-gui.cfg', "r")
+    f = open('C:\\Users\\las\Desktop\\jd-gui.cfg', "r")
     content = f.read(1)  # 读取N bytes的数据
     print content
     content = f.readline()  # 读取一行
